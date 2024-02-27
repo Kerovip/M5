@@ -1,0 +1,45 @@
+<!-- admin_panel.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="admin-panel-container">
+    <h2>Admin Panel</h2>
+    
+    <!-- زر لعرض جدول الأعضاء الجدد -->
+    <button onclick="showNewMembersTable()">Show New Members</button>
+
+    <!-- زر لإضافة عضو جديد -->
+    <button onclick="addNewMember()">Add New Member</button>
+
+    <!-- زر الموافقة على تأكيد بيانات الحساب -->
+    <button onclick="approveAccountConfirmation()">Approve Account Confirmation</button>
+
+    <!-- زر الموافقة على طلبات الإيداع -->
+    <button onclick="approveDepositRequests()">Approve Deposit Requests</button>
+
+    <!-- زر الموافقة على طلبات السحب -->
+    <button onclick="approveWithdrawalRequests()">Approve Withdrawal Requests</button>
+
+    <!-- زر لإضافة صفحة جديدة -->
+    <button onclick="addNewPage()">Add New Page</button>
+
+    <!-- زر لإضافة مقال جديد -->
+    <button onclick="addNewArticle()">Add New Article</button>
+
+    <!-- زر لإضافة صورة جديدة -->
+    <button onclick="addNewImage()">Add New Image</button>
+
+    <!-- زر لمراجعة حساب العضو -->
+    <button onclick="reviewAccount()">Review Account</button>
+  </div>
+
+  <script src="admin_script.js"></script>
+</body>
+</html>

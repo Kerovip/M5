@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="profile-container">
+    <h2>User Profile</h2>
+
+    <!-- بيانات العضو -->
+    <div class="user-info">
+      <p><strong>ID:</strong> 123</p>
+      <p><strong>اسم العضو:</strong> John Doe</p>
+      <p><strong>رصيد العضو:</strong> $1000</p>
+    </div>
+
+    <!-- خانة إضافة صورة -->
+    <div class="upload-section">
+      <label for="fileInput">رفع صورة:</label>
+      <input type="file" id="fileInput" name="fileInput">
+    </div>
+
+    <!-- خانة الإيداع -->
+    <div class="deposit-section">
+      <label for="depositAmount">الإيداع:</label>
+      <input type="number" id="depositAmount" name="depositAmount">
+      <button onclick="deposit()">تأكيد الإيداع</button>
+    </div>
+
+    <!-- خانة السحب -->
+    <div class="withdrawal-section">
+      <label for="withdrawalAmount">سحب:</label>
+      <input type="number" id="withdrawalAmount" name="withdrawalAmount">
+      <button onclick="withdraw()">تأكيد السحب</button>
+    </div>
+
+    <!-- خانة "Team" لعرض أعضاء الفريق -->
+    <div class="team-section">
+      <h3>Team</h3>
+      <!-- يمكنك استخدام بيانات من قاعدة البيانات لعرض أعضاء الفريق -->
+      <!-- اعرض اسم العضو وتاريخ انضمامه -->
+    </div>
+
+    <!-- خانة "مركز التصديق" -->
+    <div class="verification-center-section">
+      <h3>مركز التصديق</h3>
+
+      <!-- خانة "إكمال المعلومات" داخل خانة مركز التصديق -->
+      <div class="complete-info-section">
+        <h4>إكمال المعلومات</h4>
+        <!-- إضافة نموذج لإكمال المعلومات (الإسم، رقم الهاتف، العنوان، كود المحافظة، البريد الإلكتروني) -->
+        <form action="update_profile.php" method="post">
+          <!-- يمكنك استخدام حقول النموذج هنا -->
+          <!-- على سبيل المثال: -->
+          <label for="name">الإسم:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="phone">رقم الهاتف:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <!-- وهكذا للحقول الأخرى -->
+          
+          <button type="submit">حفظ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="profile_script.js"></script>
+</body>
+</html>

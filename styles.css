@@ -1,0 +1,94 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  margin-bottom: 20px;
+}
+
+.upload-section,
+.deposit-section,
+.withdrawal-section,
+.team-section,
+.verification-center-section {
+  margin-bottom: 20px;
+}
+
+.upload-section label,
+.deposit-section label,
+.withdrawal-section label,
+.team-section h3,
+.verification-center-section h3,
+.complete-info-section h4 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.upload-section input,
+.deposit-section input,
+.withdrawal-section input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.upload-section button,
+.deposit-section button,
+.withdrawal-section button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.upload-section button:hover,
+.deposit-section button:hover,
+.withdrawal-section button:hover {
+  background-color: #45a049;
+}
+
+.team-section,
+.verification-center-section {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.complete-info-section {
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label, input {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
